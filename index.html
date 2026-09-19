@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InterTabac 2026 德国出差战报</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-weight='bold'>L</text></svg>">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root{--bg:#0a0e14;--bg2:#111827;--card:#151b28;--card2:#1a2234;--border:#252d3f;--text:#e8ecf1;--dim:#7d8699;--acc:#f97316;--acc2:#fb923c;--green:#22c55e;--red:#ef4444;--blue:#3b82f6;--yellow:#eab308}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-system,sans-serif;line-height:1.75;overflow-x:hidden}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,20,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 24px}
+.nav-brand{font-weight:900;font-size:16px;color:var(--acc);letter-spacing:.5px;text-decoration:none}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:12.5px;padding:6px 12px;border-radius:8px;transition:all .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--acc);background:rgba(249,115,22,.08)}
+.nav-links a.active{color:var(--acc);background:rgba(249,115,22,.12);font-weight:600}
+.hero{min-height:60vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 60px;background:radial-gradient(ellipse at 70% 20%,#1a2040 0%,#0a0e14 60%)}
+.hero::before{content:'';position:absolute;top:10%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(249,115,22,.1) 0%,transparent 70%);border-radius:50%}
+.hero .wrap{position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid rgba(249,115,22,.4);border-radius:20px;color:var(--acc);font-size:11px;font-weight:600;letter-spacing:1.5px;margin-bottom:24px;text-transform:uppercase}
+.hero-tag::before{content:'';width:6px;height:6px;background:var(--acc);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:clamp(32px,5vw,52px);font-weight:900;line-height:1.15;margin-bottom:16px}
+.hero h1 span{background:linear-gradient(135deg,var(--acc),var(--acc2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:17px;color:var(--dim);max-width:680px;line-height:1.8}
+.route{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin:32px 0}
+.route-stop{background:var(--card);border:1px solid var(--acc);border-radius:12px;padding:12px 20px;text-align:center}
+.route-stop .city{font-size:17px;font-weight:700;color:var(--acc)}
+.route-stop .date{font-size:11px;color:var(--dim);margin-top:2px}
+.route-arrow{color:var(--dim);font-size:22px;padding:0 10px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+.hstat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px 20px}
+.hstat .n{font-size:36px;font-weight:900;color:var(--acc);font-family:'JetBrains Mono',monospace;line-height:1}
+.hstat .l{font-size:13px;color:var(--dim);margin-top:8px}
+section{padding:80px 0}
+.stag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:2.5px;color:var(--acc);text-transform:uppercase;margin-bottom:14px}
+.stitle{font-size:clamp(26px,3.5vw,38px);font-weight:900;line-height:1.2;margin-bottom:14px}
+.sdesc{font-size:16px;color:var(--dim);max-width:760px;margin-bottom:40px}
+.cards{display:grid;gap:18px}
+.c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.card p{font-size:14px;color:var(--dim);line-height:1.7}
+.card .big{font-size:32px;font-weight:900;color:var(--acc);font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.tl{position:relative;padding:10px 0}
+.tl::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--acc),var(--border));transform:translateX(-50%)}
+.tl-i{display:grid;grid-template-columns:1fr 48px 1fr;margin-bottom:36px;align-items:start}
+.tl-dot{width:14px;height:14px;background:var(--acc);border-radius:50%;margin:6px auto 0;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--acc)}
+.tl-c{padding:18px 20px;background:var(--card);border:1px solid var(--border);border-radius:12px}
+.tl-c.left{text-align:right;margin-right:24px}
+.tl-c.right{margin-left:24px}
+.tl-date{font-size:12px;color:var(--acc);font-weight:700;font-family:'JetBrains Mono',monospace}
+.tl-c h4{font-size:16px;margin:6px 0 4px}
+.tl-c p{font-size:13px;color:var(--dim)}
+.tw{overflow-x:auto;border-radius:14px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;background:var(--card);table-layout:fixed}
+th{background:var(--card2);text-align:left;padding:14px 16px;font-size:12px;font-weight:700;color:var(--acc);white-space:nowrap;text-transform:uppercase;letter-spacing:.5px}
+td{padding:12px 16px;font-size:13.5px;border-top:1px solid var(--border);vertical-align:top}
+tr:hover td{background:var(--card2)}
+.tag{display:inline-block;padding:3px 10px;border-radius:10px;font-size:11px;font-weight:600;white-space:nowrap}
+.tag-r{background:rgba(239,68,68,.15);color:var(--red)}.tag-g{background:rgba(34,197,94,.15);color:var(--green)}
+.tag-o{background:rgba(249,115,22,.15);color:var(--acc)}.tag-b{background:rgba(59,130,246,.15);color:var(--blue)}
+.ig{display:grid;gap:16px}
+.ig2{grid-template-columns:repeat(2,1fr)}.ig3{grid-template-columns:repeat(3,1fr)}
+.ic{border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--card)}
+.ic img{width:100%;height:260px;object-fit:cover;display:block;transition:transform .3s}
+.ic:hover img{transform:scale(1.03)}
+.ic .cap{padding:12px 16px;font-size:12.5px;color:var(--dim);line-height:1.5}
+.ic .cap strong{color:var(--text)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.vs-c{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px}
+.vs-c h3{font-size:20px;margin-bottom:16px}
+.vs-c pre{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--dim);white-space:pre-line;line-height:1.9}
+.cta{background:linear-gradient(135deg,rgba(249,115,22,.12),rgba(249,115,22,.03));border:1px solid rgba(249,115,22,.3);border-radius:18px;padding:48px 40px;text-align:center}
+.cta h2{font-size:28px;margin-bottom:14px}
+.cta p{color:var(--dim);max-width:640px;margin:0 auto 24px;font-size:16px}
+.cbox{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px}
+.cbox h4{font-size:14px;margin-bottom:16px;color:var(--dim)}
+.chart{width:100%;height:380px}
+.hl{background:linear-gradient(135deg,rgba(249,115,22,.08),transparent);border-left:3px solid var(--acc);border-radius:0 12px 12px 0;padding:20px 24px;margin:24px 0}
+.hl h4{font-size:15px;color:var(--acc);margin-bottom:6px}
+.hl p{font-size:14px;color:var(--dim)}
+/* Page nav cards on home */
+.pnav{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pnav-a{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px 28px;text-decoration:none;color:var(--text);transition:all .25s}
+.pnav-a:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 8px 30px rgba(249,115,22,.12)}
+.pnav-a .num{font-size:13px;font-weight:700;color:var(--acc);font-family:'JetBrains Mono',monospace;margin-bottom:8px}
+.pnav-a h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.pnav-a p{font-size:13.5px;color:var(--dim);line-height:1.6}
+/* Prev/Next */
+.pn{display:flex;justify-content:space-between;gap:16px;margin-top:60px}
+.pn a{flex:1;display:block;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 24px;text-decoration:none;color:var(--text);transition:all .2s}
+.pn a:hover{border-color:var(--acc)}
+.pn a.next{text-align:right}
+.pn .pn-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.pn .pn-title{font-size:16px;font-weight:700;color:var(--acc)}
+footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color:var(--dim);font-size:13px;margin-top:40px}
+@media(max-width:900px){
+.c3,.c4{grid-template-columns:repeat(2,1fr)}.hero-stats{grid-template-columns:repeat(2,1fr)}
+.vs{grid-template-columns:1fr}.ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
+.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
+.tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
+.nav-links{display:none}
+}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}}
+</style></head><body>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">LVL · InterTabac 2026</a><div class="nav-links">
+<a href="index.html" class="active">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a>
+</div></div></nav>
+
+<section class="hero"><div class="wrap">
+<div class="hero-tag">Business Trip Report · Sep 15–19 2026</div>
+<h1>InterTabac 2026<br><span>德国出差战报</span></h1>
+<p class="hero-sub">多特蒙德展会 + 科隆/法兰克福渠道走访。核心结论：欧盟可拆卸电池法规倒计时5个月，德国市场已进入"开放式 + 可拆卸"时代。我们必须现在立项。</p>
+<div class="route">
+<div class="route-stop"><div class="city">Dortmund</div><div class="date">9/15–17 展会</div></div>
+<div class="route-arrow">→</div>
+<div class="route-stop"><div class="city">Köln</div><div class="date">9/18 门店走访</div></div>
+<div class="route-arrow">→</div>
+<div class="route-stop"><div class="city">Frankfurt</div><div class="date">9/19 仓库拜访</div></div>
+</div>
+<div class="hero-stats">
+<div class="hstat"><div class="n">8+</div><div class="l">拜访/建立联系渠道商</div></div>
+<div class="hstat"><div class="n">15+</div><div class="l">竞品产品实测调研</div></div>
+<div class="hstat"><div class="n">5</div><div class="l">重点客户仓库/门店</div></div>
+<div class="hstat"><div class="n">1</div><div class="l">战略级产品定义结论</div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="stag">Executive Summary</div>
+<h2 class="stitle">核心结论</h2>
+<p class="sdesc">本次出差取得两大层面关键成果：业务拓展突破 + 产品定义明确。</p>
+<div class="cards c3">
+<div class="card"><div class="big">01</div><h3>业务突破</h3><p>与 EXTRADE 采购总监、销售总监、中国区负责人完成会议并确定共同推进项目，已搭建专项项目工作群。拜访 Bullet、S-MANN、VSL 三家经销商；新增联系 INTRADE、SALT、SMOKEMANIA、VAPEITALIA。</p></div>
+<div class="card"><div class="big">02</div><h3>市场定论</h3><p>预注油赛道由 ELFBAR 高度垄断，新品牌切入空间几乎为零。开放式换弹赛道由 OXVA 领跑但存在明确产品短板。结论：首款德国产品必须专注开放式，补 OXVA 短板实现错位竞争。</p></div>
+<div class="card"><div class="big">03</div><h3>紧急预警</h3><p>欧盟电池法规 (EU) 2023/1542 Article 11 将于 <strong style="color:var(--acc)">2027年2月18日</strong> 强制执行可拆卸电池。展会现场 SMOK、VOOPOO、INNOKIN、UWELL 已全线切换。倒计时仅5个月。</p></div>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="stag">Report Navigation</div>
+<h2 class="stitle">报告目录</h2>
+<p class="sdesc">点击进入各章节详细内容，每页均有现场实拍图和数据支撑。</p>
+<div class="pnav">
+<a href="policy.html" class="pnav-a"><div class="num">01</div><h3>政策走势</h3><p>可拆卸电池法规倒计时、TPD 规则、德国电子烟税、正规/灰色二元渠道</p></a>
+<a href="market.html" class="pnav-a"><div class="num">02</div><h3>市场分析</h3><p>ELFBAR 垄断预注油、OXVA 领跑开放式、市场结构数据</p></a>
+<a href="competition.html" class="pnav-a"><div class="num">03</div><h3>竞品分析</h3><p>8大品牌可拆卸产品对标表、ARGUS G4 / KLOUD 深度拆解</p></a>
+<a href="product.html" class="pnav-a"><div class="num">04</div><h3>产品路标</h3><p>LVL PWR 现状 vs 下一代目标、三大差异化能力</p></a>
+<a href="channel.html" class="pnav-a"><div class="num">05</div><h3>渠道拓展</h3><p>7家客户进展表、德国/欧洲拓展策略</p></a>
+<a href="action.html" class="pnav-a"><div class="num">06</div><h3>行动计划</h3><p>短/中/长期三阶段路线图、立即行动建议</p></a>
+</div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+<div class="ig ig3">
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FphAbCsFuoA1AFxwnbQcPQMmnh3" alt="BULLET Store"><div class="cap"><strong>BULLET 多特蒙德门店</strong></div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P6fQbNRK0oqjsxxtZuFcx3qRnEc" alt="Intrade展台"><div class="cap"><strong>INTRADE 展会展台</strong></div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KbYwbadBQoz6uexH4B6csnEnnRJ" alt="可拆卸电池"><div class="cap"><strong>可拆卸电池拆机样机</strong></div></div>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+<p>LVL VAPE · InterTabac 2026 Business Trip Report · September 2026</p>
+<p style="margin-top:8px">Dortmund → Köln → Frankfurt · Sep 15–19, 2026</p>
+</div></footer>
+</body></html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>竞品分析 · LVL InterTabac 2026</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f97316'/><text x='50' y='68' font-size='50' text-anchor='middle' fill='white' font-weight='bold'>L</text></svg>">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap">
+<style>
+:root{--bg:#0a0e14;--bg2:#111827;--card:#151b28;--card2:#1a2234;--border:#252d3f;--text:#e8ecf1;--dim:#7d8699;--acc:#f97316;--acc2:#fb923c;--green:#22c55e;--red:#ef4444;--blue:#3b82f6;--yellow:#eab308}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-system,sans-serif;line-height:1.75;overflow-x:hidden}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,14,20,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 24px}
+.nav-brand{font-weight:900;font-size:16px;color:var(--acc);letter-spacing:.5px;text-decoration:none}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap}
+.nav-links a{color:var(--dim);text-decoration:none;font-size:12.5px;padding:6px 12px;border-radius:8px;transition:all .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--acc);background:rgba(249,115,22,.08)}
+.nav-links a.active{color:var(--acc);background:rgba(249,115,22,.12);font-weight:600}
+.hero{min-height:60vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 60px;background:radial-gradient(ellipse at 70% 20%,#1a2040 0%,#0a0e14 60%)}
+.hero::before{content:'';position:absolute;top:10%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(249,115,22,.1) 0%,transparent 70%);border-radius:50%}
+.hero .wrap{position:relative;z-index:1}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 16px;border:1px solid rgba(249,115,22,.4);border-radius:20px;color:var(--acc);font-size:11px;font-weight:600;letter-spacing:1.5px;margin-bottom:24px;text-transform:uppercase}
+.hero-tag::before{content:'';width:6px;height:6px;background:var(--acc);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.hero h1{font-size:clamp(32px,5vw,52px);font-weight:900;line-height:1.15;margin-bottom:16px}
+.hero h1 span{background:linear-gradient(135deg,var(--acc),var(--acc2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:17px;color:var(--dim);max-width:680px;line-height:1.8}
+.route{display:flex;align-items:center;justify-content:center;gap:0;flex-wrap:wrap;margin:32px 0}
+.route-stop{background:var(--card);border:1px solid var(--acc);border-radius:12px;padding:12px 20px;text-align:center}
+.route-stop .city{font-size:17px;font-weight:700;color:var(--acc)}
+.route-stop .date{font-size:11px;color:var(--dim);margin-top:2px}
+.route-arrow{color:var(--dim);font-size:22px;padding:0 10px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:24px}
+.hstat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px 20px}
+.hstat .n{font-size:36px;font-weight:900;color:var(--acc);font-family:'JetBrains Mono',monospace;line-height:1}
+.hstat .l{font-size:13px;color:var(--dim);margin-top:8px}
+section{padding:80px 0}
+.stag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:2.5px;color:var(--acc);text-transform:uppercase;margin-bottom:14px}
+.stitle{font-size:clamp(26px,3.5vw,38px);font-weight:900;line-height:1.2;margin-bottom:14px}
+.sdesc{font-size:16px;color:var(--dim);max-width:760px;margin-bottom:40px}
+.cards{display:grid;gap:18px}
+.c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--acc);transform:translateY(-2px)}
+.card h3{font-size:18px;font-weight:700;margin-bottom:10px}
+.card p{font-size:14px;color:var(--dim);line-height:1.7}
+.card .big{font-size:32px;font-weight:900;color:var(--acc);font-family:'JetBrains Mono',monospace;margin-bottom:6px}
+.tl{position:relative;padding:10px 0}
+.tl::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--acc),var(--border));transform:translateX(-50%)}
+.tl-i{display:grid;grid-template-columns:1fr 48px 1fr;margin-bottom:36px;align-items:start}
+.tl-dot{width:14px;height:14px;background:var(--acc);border-radius:50%;margin:6px auto 0;border:3px solid var(--bg);box-shadow:0 0 0 2px var(--acc)}
+.tl-c{padding:18px 20px;background:var(--card);border:1px solid var(--border);border-radius:12px}
+.tl-c.left{text-align:right;margin-right:24px}
+.tl-c.right{margin-left:24px}
+.tl-date{font-size:12px;color:var(--acc);font-weight:700;font-family:'JetBrains Mono',monospace}
+.tl-c h4{font-size:16px;margin:6px 0 4px}
+.tl-c p{font-size:13px;color:var(--dim)}
+.tw{overflow-x:auto;border-radius:14px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;background:var(--card);table-layout:fixed}
+th{background:var(--card2);text-align:left;padding:14px 16px;font-size:12px;font-weight:700;color:var(--acc);white-space:nowrap;text-transform:uppercase;letter-spacing:.5px}
+td{padding:12px 16px;font-size:13.5px;border-top:1px solid var(--border);vertical-align:top}
+tr:hover td{background:var(--card2)}
+.tag{display:inline-block;padding:3px 10px;border-radius:10px;font-size:11px;font-weight:600;white-space:nowrap}
+.tag-r{background:rgba(239,68,68,.15);color:var(--red)}.tag-g{background:rgba(34,197,94,.15);color:var(--green)}
+.tag-o{background:rgba(249,115,22,.15);color:var(--acc)}.tag-b{background:rgba(59,130,246,.15);color:var(--blue)}
+.ig{display:grid;gap:16px}
+.ig2{grid-template-columns:repeat(2,1fr)}.ig3{grid-template-columns:repeat(3,1fr)}
+.ic{border-radius:14px;overflow:hidden;border:1px solid var(--border);background:var(--card)}
+.ic img{width:100%;height:260px;object-fit:cover;display:block;transition:transform .3s}
+.ic:hover img{transform:scale(1.03)}
+.ic .cap{padding:12px 16px;font-size:12.5px;color:var(--dim);line-height:1.5}
+.ic .cap strong{color:var(--text)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.vs-c{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:28px}
+.vs-c h3{font-size:20px;margin-bottom:16px}
+.vs-c pre{font-family:'JetBrains Mono',monospace;font-size:12.5px;color:var(--dim);white-space:pre-line;line-height:1.9}
+.cta{background:linear-gradient(135deg,rgba(249,115,22,.12),rgba(249,115,22,.03));border:1px solid rgba(249,115,22,.3);border-radius:18px;padding:48px 40px;text-align:center}
+.cta h2{font-size:28px;margin-bottom:14px}
+.cta p{color:var(--dim);max-width:640px;margin:0 auto 24px;font-size:16px}
+.cbox{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px}
+.cbox h4{font-size:14px;margin-bottom:16px;color:var(--dim)}
+.chart{width:100%;height:380px}
+.hl{background:linear-gradient(135deg,rgba(249,115,22,.08),transparent);border-left:3px solid var(--acc);border-radius:0 12px 12px 0;padding:20px 24px;margin:24px 0}
+.hl h4{font-size:15px;color:var(--acc);margin-bottom:6px}
+.hl p{font-size:14px;color:var(--dim)}
+/* Page nav cards on home */
+.pnav{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pnav-a{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:32px 28px;text-decoration:none;color:var(--text);transition:all .25s}
+.pnav-a:hover{border-color:var(--acc);transform:translateY(-3px);box-shadow:0 8px 30px rgba(249,115,22,.12)}
+.pnav-a .num{font-size:13px;font-weight:700;color:var(--acc);font-family:'JetBrains Mono',monospace;margin-bottom:8px}
+.pnav-a h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.pnav-a p{font-size:13.5px;color:var(--dim);line-height:1.6}
+/* Prev/Next */
+.pn{display:flex;justify-content:space-between;gap:16px;margin-top:60px}
+.pn a{flex:1;display:block;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:20px 24px;text-decoration:none;color:var(--text);transition:all .2s}
+.pn a:hover{border-color:var(--acc)}
+.pn a.next{text-align:right}
+.pn .pn-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.pn .pn-title{font-size:16px;font-weight:700;color:var(--acc)}
+footer{border-top:1px solid var(--border);padding:40px 0;text-align:center;color:var(--dim);font-size:13px;margin-top:40px}
+@media(max-width:900px){
+.c3,.c4{grid-template-columns:repeat(2,1fr)}.hero-stats{grid-template-columns:repeat(2,1fr)}
+.vs{grid-template-columns:1fr}.ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
+.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
+.tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
+.nav-links{display:none}
+}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}}
+</style></head><body>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">LVL · InterTabac 2026</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
+<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 03</div><h1>竞品分析<br><span>可拆卸电池已成标配</span></h1><p class="hero-sub">展会现场调研 ELUX、VOOPOO、Freemax、Geekvape 等头部品牌。合规开放式产品统一趋势：可拆卸电池 + 多功率/多阻值调节 + 商务简约外观。</p></div></section>
+<section><div class="wrap">
+<div class="tw"><table>
+<thead><tr><th style="width:13%">品牌</th><th style="width:15%">型号</th><th style="width:15%">电池</th><th style="width:11%">功率</th><th style="width:24%">阻值方案</th><th style="width:22%">关键特点</th></tr></thead><tbody>
+<tr><td><strong>SMOK</strong></td><td>S2 / Nord</td><td>1300mAh 可拆卸</td><td>—</td><td>—</td><td><span class="tag tag-b">早期布局</span></td></tr>
+<tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>MAGIC Pod 三档：0.4/0.7/1.0Ω</td><td><span class="tag tag-r">直接对手</span> 三档阻值切换</td></tr>
+<tr><td><strong>INNOKIN</strong></td><td>Coolfire Z Air / Foretex Pro</td><td>2000mAh 可拆卸</td><td>—</td><td>—</td><td><span class="tag tag-b">全线可拆卸</span></td></tr>
+<tr><td><strong>UWELL</strong></td><td>Caliburn G3 / G3R</td><td>1800mAh 可拆卸</td><td>—</td><td>—</td><td>2.79" 触摸屏</td></tr>
+<tr><td><strong>UWELL</strong></td><td>Typhos 2</td><td>—</td><td>45W</td><td>0.3Ω 0.4Ω</td><td>六色，All-day MTL</td></tr>
+<tr><td><strong>SALT</strong></td><td>Biggie</td><td>900mAh 可拆卸</td><td>—</td><td>—</td><td>入门级可拆卸</td></tr>
+<tr><td><strong>GEEKVAPE</strong></td><td>KLOUD (35K)</td><td>1000mAh</td><td>18W max</td><td>0.6Ω / 10ml Side-Filling</td><td><span class="tag tag-g">短机身验证</span> InnoCigs经销</td></tr>
+<tr><td><strong>DOJO</strong></td><td>BLAST X (Vaporesso)</td><td>—</td><td>—</td><td>10ml补油瓶 + 空烟弹</td><td>S-MANN仓库大量备货</td></tr>
+</tbody></table></div>
+<h3 style="margin:48px 0 20px;font-size:22px">重点对标分析</h3>
+<div class="cards c2">
+<div class="card"><h3 style="color:var(--acc)">VOOPOO ARGUS G4 · 直接对手</h3><p>核心卖点：单烟弹三档阻值切换（0.4Ω DTL / 0.7Ω RDTL / 1.0Ω MTL），一个烟弹覆盖三种抽吸体验。1650mAh可拆卸电池，5–35W可调。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：PWR GO 已有三档功率（10/14/24W）和双阻值（0.6/1.0Ω），需强化为"三档阻值+三档功率"完整可调方案，直接对标。</p></div>
+<div class="card"><h3 style="color:var(--acc)">GEEKVAPE KLOUD · 短身验证</h3><p>35K puffs 大口数，10ml Side-Filling补油系统，1000mAh，18W max，0.6Ω。由 InnoCigs 经销，6色可选。机身明显短于 LVL PWR（132.25mm）。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：下一代产品必须缩短机身。KLOUD 证明同10ml容量下短机身方案可行，多家经销商反馈 PWR 过长。</p></div>
+</div>
+<div class="ig ig3" style="margin-top:32px">
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XTAJbt88toy8prx3RRmcL6yFnbV" alt="KLOUD规格卡"><div class="cap"><strong>GEEKVAPE KLOUD 规格卡</strong>：InnoCigs陈列，1000mAh / 18W / 0.6Ω / 10ml Side-Filling</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/QjwGbFs6VoIhN2xZvphcIkTQnLe" alt="DOJO货架"><div class="cap"><strong>DOJO BLAST X 补油瓶</strong>：S-MANN仓库整箱备货，多口味</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KImCb75hkokAWNxezGAcF3ZBn5f" alt="Uwell Typhos 2"><div class="cap"><strong>UWELL Typhos 2</strong>：六色，45W，"Built for All-Day MTL"</div></div>
+</div>
+<div class="ig ig3" style="margin-top:16px">
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JRVubWoibo3GN4xdPHZc91gdnFb" alt="DOJO展台"><div class="cap"><strong>DOJO BLAST X 展台</strong>：10ml补油+空烟弹方案，6种新口味，展会重点推广</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P6fQbNRK0oqjsxxtZuFcx3qRnEc" alt="Intrade展台"><div class="cap"><strong>INTRADE 展台（ELFBAR总代）</strong>：粉色灯光展台，全线 ELFBAR 产品陈列</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/YF2ebucq9oinUHx3fMQc3kgln6g" alt="Intrade ELFX"><div class="cap"><strong>ELFBAR ELFX 系列细节</strong>：ELFX PRO 多款配色 + ELFLIQ 烟油全口味陈列</div></div>
+</div>
+<div class="pn"><a href="market.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">市场分析</div></a><a href="product.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">产品路标</div></a></div>
+</div></section>
+<footer><div class="wrap"><p>LVL VAPE · InterTabac 2026 Business Trip Report · September 2026</p></div></footer>
+</body></html>
