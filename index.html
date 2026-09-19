@@ -30,13 +30,13 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-sy
 .nav-links a.active{color:var(--acc);font-weight:500}
 
 /* Hero */
-.hero{min-height:75vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:140px 0 80px;background:#000}
+.hero{min-height:75vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:140px 0 80px;background:#000;text-align:center}
 .hero::before{content:'';position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(41,151,255,.12) 0%,transparent 65%);border-radius:50%;pointer-events:none}
 .hero .wrap{position:relative;z-index:1;width:100%}
 .hero-tag{display:inline-block;font-size:14px;font-weight:500;color:var(--acc);letter-spacing:.02em;margin-bottom:24px}
-.hero h1{font-size:clamp(40px,6vw,72px);font-weight:700;line-height:1.05;letter-spacing:-.02em;margin-bottom:28px}
-.hero h1 .sub{display:block;font-size:clamp(22px,3vw,36px);font-weight:400;color:var(--dim);margin-top:12px;letter-spacing:-.01em}
-.hero-sub{font-size:19px;color:var(--dim);max-width:720px;line-height:1.65;letter-spacing:-.01em}
+.hero h1{font-size:clamp(28px,4vw,48px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:16px;white-space:nowrap}
+.hero h1 .sub{display:block;font-size:clamp(18px,2.2vw,26px);font-weight:400;color:var(--dim);margin-top:12px;letter-spacing:-.01em;white-space:normal}
+.hero-sub{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto;line-height:1.65;letter-spacing:-.01em}
 .hero-sub strong{color:var(--text);font-weight:500}
 
 /* Route */
@@ -47,21 +47,21 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-sy
 .route-arrow{color:var(--dim2);font-size:24px;padding:0 14px}
 
 /* Stats */
-.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px;text-align:center}
 .hstat{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px 24px}
 .hstat .n{font-size:44px;font-weight:700;color:var(--text);line-height:1;letter-spacing:-.02em}
 .hstat .l{font-size:14px;color:var(--dim);margin-top:10px}
 
 /* Sections */
 section{padding:100px 0}
-.stag{display:block;font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--acc);margin-bottom:16px}
-.stitle{font-size:clamp(28px,4vw,48px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px}
-.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin-bottom:48px;line-height:1.6}
+.stag{display:block;font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--acc);margin-bottom:16px;text-align:center}
+.stitle{font-size:clamp(28px,4vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:20px;text-align:center}
+.sdesc{font-size:17px;color:var(--dim);max-width:760px;margin:0 auto 48px;line-height:1.6;text-align:center}
 
 /* Cards */
 .cards{display:grid;gap:20px}
 .c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s;text-align:center}
 .card:hover{border-color:var(--border2);transform:translateY(-3px)}
 .card h3{font-size:22px;font-weight:600;margin-bottom:12px;letter-spacing:-.01em}
 .card p{font-size:16px;color:var(--dim);line-height:1.65}
@@ -78,7 +78,7 @@ section{padding:100px 0}
 
 /* Page nav */
 .pnav{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.pnav-a{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 32px;text-decoration:none;color:var(--text);transition:all .3s}
+.pnav-a{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 32px;text-decoration:none;color:var(--text);transition:all .3s;text-align:center}
 .pnav-a:hover{border-color:var(--acc);transform:translateY(-4px);box-shadow:0 12px 40px rgba(41,151,255,.08)}
 .pnav-a .num{font-size:14px;font-weight:600;color:var(--acc);margin-bottom:10px}
 .pnav-a h3{font-size:24px;font-weight:600;margin-bottom:10px;letter-spacing:-.01em}
@@ -133,7 +133,8 @@ tr:hover td{background:rgba(255,255,255,.02)}
   .c2,.c3,.c4{grid-template-columns:1fr}
   .ig2,.ig3{grid-template-columns:1fr}
   .pnav{grid-template-columns:1fr}
-  .hero h1{font-size:36px}
+  .hero h1{font-size:22px;white-space:normal}
+  .hero h1 .sub{font-size:16px}
 }
 </style></head><body>
 
@@ -195,9 +196,9 @@ tr:hover td{background:rgba(255,255,255,.02)}
 
 <section style="padding-top:0"><div class="wrap">
 <div class="ig ig3">
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FphAbCsFuoA1AFxwnbQcPQMmnh3" alt="BULLET Store"><div class="cap"><strong>BULLET 多特蒙德门店</strong></div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P6fQbNRK0oqjsxxtZuFcx3qRnEc" alt="Intrade展台"><div class="cap"><strong>INTRADE 展会展台</strong></div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KbYwbadBQoz6uexH4B6csnEnnRJ" alt="可拆卸电池"><div class="cap"><strong>可拆卸电池拆机样机</strong></div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XLfnbAEFuoAoCBx2aaUcVDZ8nge" alt="Messe Dortmund"><div class="cap"><strong>Dortmund Messe</strong> · InterTabac 2026 展馆外观</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/QEUAblbRhoyEWZxDiC3cFegjncx" alt="EX-Trade Stand"><div class="cap"><strong>EX-Trade 展位</strong> · VOOPOO / ELFBAR / SALT 联合展台</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/WbihbZLEJo29khxIIHJcV1xGnFh" alt="SMOK 可拆卸电池"><div class="cap"><strong>SMOK 可拆卸电池产品</strong> · 展会现场可拆卸电池已成标配</div></div>
 </div>
 </div></section>
 
