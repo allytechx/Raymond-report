@@ -34,9 +34,9 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-sy
 .hero h1 span{display:block;font-size:clamp(20px,2.5vw,28px);font-weight:400;color:var(--dim);margin-top:10px}
 .hero-sub{font-size:18px;color:var(--dim);max-width:680px;margin:0 auto;line-height:1.65}
 section{padding:80px 0}
-.stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center
-.stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center
-.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center
+.stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center}
+.stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center}
+.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center}
 .cards{display:grid;gap:20px}
 .c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s}
@@ -100,9 +100,9 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
 .tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
 .tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
-.nav-links{display:none}
+.nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
-@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 </style></head><body>
 <nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html" class="active">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 04</div><h1>产品定义<br><span>主攻12ml开放式，助攻0+10ml</span></h1><p class="hero-sub">一线客户反馈证实 LVL PWR 长机身问题被多家经销商提出。下一代产品需锁定三大差异化能力。</p></div></section>

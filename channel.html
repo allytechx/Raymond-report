@@ -34,9 +34,9 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-sy
 .hero h1 span{display:block;font-size:clamp(20px,2.5vw,28px);font-weight:400;color:var(--dim);margin-top:10px}
 .hero-sub{font-size:18px;color:var(--dim);max-width:680px;margin:0 auto;line-height:1.65}
 section{padding:80px 0}
-.stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center
-.stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center
-.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center
+.stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center}
+.stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center}
+.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center}
 .cards{display:grid;gap:20px}
 .c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s}
@@ -100,9 +100,9 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
 .tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
 .tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
-.nav-links{display:none}
+.nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
-@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 </style></head><body>
 <nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html" class="active">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 05</div><h1>渠道拓展<br><span>左手 EXTRADE，右手 SALT</span></h1><p class="hero-sub">德国 TPD 采用进口商注册制，换经销商成本极高。产品力是唯一武器。本次已与德国、意大利、罗马尼亚客户深入讨论。</p></div></section>
@@ -113,9 +113,9 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <tr><td><strong>INTRADE</strong></td><td>ELFBAR 总代</td><td>Mo (老板)，Euskirchen</td><td><span class="tag tag-g">已建立商务关系</span> 展会重点对接</td></tr>
 <tr><td><strong>S-MANN</strong></td><td>法兰克福批发商</td><td>Jüssef Slymann，Lärchenstr.81, 65933 Frankfurt</td><td><span class="tag tag-b">已拜访仓库</span> ELFBAR全系备货</td></tr>
 <tr><td><strong>BULLET</strong></td><td>科隆/多特零售商</td><td>Simardip Randhawa，Dortmund/Köln</td><td><span class="tag tag-b">已拜访门店</span> 大口数产品调研</td></tr>
-<tr><td><strong>SALT</strong></td><td>—</td><td>—</td><td><span class="tag tag-o">已建立联系</span></td></tr>
-<tr><td><strong>SMOKEMANIA</strong></td><td>—</td><td>—</td><td><span class="tag tag-o">已建立联系</span></td></tr>
-<tr><td><strong>VAPEITALIA</strong></td><td>意大利渠道</td><td>—</td><td><span class="tag tag-o">已建立联系</span></td></tr>
+<tr><td><strong>SALT</strong></td><td>拉脱维亚/德国品牌商</td><td>采购经理</td><td><span class="tag tag-o">已建立联系</span></td></tr>
+<tr><td><strong>SMOKEMANIA</strong></td><td>罗马尼亚渠道商</td><td>CEO &amp; 创始人</td><td><span class="tag tag-o">已建立联系</span></td></tr>
+<tr><td><strong>VAPEITALIA</strong></td><td>意大利渠道</td><td>Keiko，采购经理</td><td><span class="tag tag-o">已建立联系</span></td></tr>
 </tbody></table></div>
 <div class="cards c2" style="margin-top:32px">
 <div class="card"><h3>德国市场关键洞察</h3><p>TPD 采用本国进口商注册，一旦选定经销商很难更换。产品定义必须与经销商深度共创。EXTRADE 是 OXVA 总代，与我们做开放式产品的定位高度契合。FUMOT 是德国黑市最畅销品牌，>10ml 容量在便利店私下销售。</p></div>

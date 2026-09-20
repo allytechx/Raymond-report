@@ -34,9 +34,9 @@ body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-sy
 .hero h1 span{display:block;font-size:clamp(20px,2.5vw,28px);font-weight:400;color:var(--dim);margin-top:10px}
 .hero-sub{font-size:18px;color:var(--dim);max-width:680px;margin:0 auto;line-height:1.65}
 section{padding:80px 0}
-.stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center
-.stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center
-.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center
+.stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center}
+.stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center}
+.sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center}
 .cards{display:grid;gap:20px}
 .c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s}
@@ -100,23 +100,23 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
 .tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
 .tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
-.nav-links{display:none}
+.nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
-@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 </style></head><body>
 <nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 03</div><h1>竞品分析<br><span>可拆卸电池已成标配</span></h1><p class="hero-sub">展会现场调研 ELUX、VOOPOO、Freemax、Geekvape 等头部品牌。合规开放式产品统一趋势：可拆卸电池 + 多功率/多阻值调节 + 商务简约外观。</p></div></section>
 <section><div class="wrap">
 <div class="tw"><table>
 <thead><tr><th style="width:13%">品牌</th><th style="width:15%">型号</th><th style="width:15%">电池</th><th style="width:11%">功率</th><th style="width:24%">阻值方案</th><th style="width:22%">关键特点</th></tr></thead><tbody>
-<tr><td><strong>SMOK</strong></td><td>S2 / Nord</td><td>1300mAh 可拆卸</td><td>—</td><td>—</td><td><span class="tag tag-b">早期布局</span></td></tr>
-<tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>MAGIC Pod 三档：0.4/0.7/1.0Ω</td><td><span class="tag tag-r">直接对手</span> 三档阻值切换</td></tr>
-<tr><td><strong>INNOKIN</strong></td><td>Coolfire Z Air / Foretex Pro</td><td>2000mAh 可拆卸</td><td>—</td><td>—</td><td><span class="tag tag-b">全线可拆卸</span></td></tr>
-<tr><td><strong>UWELL</strong></td><td>Caliburn G3 / G3R</td><td>1800mAh 可拆卸</td><td>—</td><td>—</td><td>2.79" 触摸屏</td></tr>
-<tr><td><strong>UWELL</strong></td><td>Typhos 2</td><td>—</td><td>45W</td><td>0.3Ω 0.4Ω</td><td>六色，All-day MTL</td></tr>
-<tr><td><strong>SALT</strong></td><td>Biggie</td><td>900mAh 可拆卸</td><td>—</td><td>—</td><td>入门级可拆卸</td></tr>
-<tr><td><strong>GEEKVAPE</strong></td><td>KLOUD (35K)</td><td>1000mAh</td><td>18W max</td><td>0.6Ω / 10ml Side-Filling</td><td><span class="tag tag-g">短机身验证</span> InnoCigs经销</td></tr>
-<tr><td><strong>DOJO</strong></td><td>BLAST X (Vaporesso)</td><td>—</td><td>—</td><td>10ml补油瓶 + 空烟弹</td><td>S-MANN仓库大量备货</td></tr>
+<tr><td><strong>SMOK</strong></td><td>S2 / Nord</td><td>1300mAh 可拆卸</td><td>20W max</td><td>0.6Ω / 0.8Ω 标准pod</td><td><span class="tag tag-b">早期布局</span> 可拆卸电池先行者</td></tr>
+<tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>MAGIC Pod 三档：0.4/0.7/1.0Ω</td><td><span class="tag tag-r">直接对手</span> 三档阻值切换 + 双功率区间</td></tr>
+<tr><td><strong>INNOKIN</strong></td><td>Coolfire Z Air / Foretex Pro</td><td>2000mAh 可拆卸</td><td>40W max</td><td>0.3Ω / 0.8Ω 可调</td><td><span class="tag tag-b">全线可拆卸</span> 2000mAh大容量电池</td></tr>
+<tr><td><strong>UWELL</strong></td><td>Caliburn G3 / G3R</td><td>1800mAh 可拆卸</td><td>25W max</td><td>0.8Ω / 1.0Ω / 1.2Ω</td><td>2.79" 触摸屏，用户体验标杆</td></tr>
+<tr><td><strong>UWELL</strong></td><td>Typhos 2</td><td>1500mAh 内置</td><td>45W</td><td>0.3Ω / 0.4Ω</td><td>六色，All-day MTL定位</td></tr>
+<tr><td><strong>SALT</strong></td><td>Biggie</td><td>900mAh 可拆卸</td><td>15W max</td><td>0.8Ω MTL</td><td>入门级可拆卸，价格敏感市场</td></tr>
+<tr><td><strong>GEEKVAPE</strong></td><td>KLOUD (35K)</td><td>1000mAh</td><td>18W max</td><td>0.6Ω / 10ml Side-Filling</td><td><span class="tag tag-g">短机身验证</span> InnoCigs经销，机身&lt;110mm</td></tr>
+<tr><td><strong>DOJO</strong></td><td>BLAST X (Vaporesso)</td><td>1000mAh 内置</td><td>20W max</td><td>10ml补油瓶 + 空烟弹 0.6Ω</td><td>S-MANN仓库大量备货，灰色渠道主力</td></tr>
 </tbody></table></div>
 <h3 style="margin:48px 0 20px;font-size:22px">重点对标分析</h3>
 <div class="cards c2">
