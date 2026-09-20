@@ -95,16 +95,23 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-label{font-size:13px;color:var(--dim2);margin-bottom:4px}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
+
+.nav-search{margin-left:8px}
+.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
+.nav-search input:focus{width:170px;border-color:#2997ff}
+.nav-search input::placeholder{color:#6e6e73}
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
-.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
-.tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
+.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr;grid-template-areas:"dot content"}
+.tl-c.left{text-align:left;margin-right:0;grid-area:content}.tl-c.right{margin-left:0;grid-area:content}
+.tl-dot{grid-area:dot}
+.tl-i > div:empty{display:none}
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html" class="active">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html" class="active">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 01</div><h1>政策走势<br><span>可拆卸电池法规倒计时</span></h1><p class="hero-sub">德国严格落地欧盟 TPD 法规，叠加电池法规，市场已形成"正规合规渠道 + 便利店灰色渠道"二元业态。</p></div></section>
 <section><div class="wrap">
 <div class="tl">

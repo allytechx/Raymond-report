@@ -95,16 +95,21 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-label{font-size:13px;color:var(--dim2);margin-bottom:4px}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
+
+.nav-search{margin-left:8px}
+.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
+.nav-search input:focus{width:170px;border-color:#2997ff}
+.nav-search input::placeholder{color:#6e6e73}
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
-.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
-.tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
+.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr;grid-template-areas:"dot content"}
+.tl-c.left{text-align:left;margin-right:0;grid-area:content}.tl-c.right{margin-left:0;grid-area:content}.tl-dot{grid-area:dot}.tl-i > div:empty{display:none}
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 03</div><h1>竞品分析<br><span>可拆卸电池已成标配</span></h1><p class="hero-sub">展会现场调研 ELUX、VOOPOO、Freemax、Geekvape 等头部品牌。合规开放式产品统一趋势：可拆卸电池 + 多功率/多阻值调节 + 商务简约外观。</p></div></section>
 <section><div class="wrap">
 <div class="tw"><table>
@@ -124,14 +129,14 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <div class="card"><h3 style="color:var(--acc)">GEEKVAPE KLOUD · 短身验证</h3><p>35K puffs 大口数，10ml Side-Filling补油系统，1000mAh，18W max，0.6Ω。由 InnoCigs 经销，6色可选。机身明显短于 LVL PWR（132.25mm）。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：下一代产品必须缩短机身。KLOUD 证明同10ml容量下短机身方案可行，多家经销商反馈 PWR 过长。</p></div>
 </div>
 <div class="ig ig3" style="margin-top:32px">
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XTAJbt88toy8prx3RRmcL6yFnbV" alt="KLOUD规格卡"><div class="cap"><strong>GEEKVAPE KLOUD 规格卡</strong>：InnoCigs陈列，1000mAh / 18W / 0.6Ω / 10ml Side-Filling</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/QjwGbFs6VoIhN2xZvphcIkTQnLe" alt="DOJO货架"><div class="cap"><strong>DOJO BLAST X 补油瓶</strong>：S-MANN仓库整箱备货，多口味</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KImCb75hkokAWNxezGAcF3ZBn5f" alt="Uwell Typhos 2"><div class="cap"><strong>UWELL Typhos 2</strong>：六色，45W，"Built for All-Day MTL"</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/A0zbb2ao5oW9Tjx0cCwcPZ3Qnce" alt="ARGUS G4"><div class="cap"><strong>VOOPOO ARGUS G4</strong>：五色阵容，1650mAh可拆卸，5–35W，三档阻值切换</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FCSGbvoVrolyfdxTLQ2chWIgnTh" alt="KLOUD"><div class="cap"><strong>GEEKVAPE KLOUD</strong>：10ml Side-Filling，1000mAh，短机身方案验证</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/EYCMblmvnoOpaKxrlZQcBFLJnkg" alt="OXVA XLIM"><div class="cap"><strong>OXVA XLIM Pro</strong>：碳纤维黑，开放式市场领跑者，商务风格标杆</div></div>
 </div>
 <div class="ig ig3" style="margin-top:16px">
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JRVubWoibo3GN4xdPHZc91gdnFb" alt="DOJO展台"><div class="cap"><strong>DOJO BLAST X 展台</strong>：10ml补油+空烟弹方案，6种新口味，展会重点推广</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/P6fQbNRK0oqjsxxtZuFcx3qRnEc" alt="Intrade展台"><div class="cap"><strong>INTRADE 展台（ELFBAR总代）</strong>：粉色灯光展台，全线 ELFBAR 产品陈列</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/YF2ebucq9oinUHx3fMQc3kgln6g" alt="Intrade ELFX"><div class="cap"><strong>ELFBAR ELFX 系列细节</strong>：ELFX PRO 多款配色 + ELFLIQ 烟油全口味陈列</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KImCb75hkokAWNxezGAcF3ZBn5f" alt="Uwell Typhos 2"><div class="cap"><strong>UWELL Typhos 2</strong>：六色，45W，"Built for All-Day MTL"</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JRVubWoibo3GN4xdPHZc91gdnFb" alt="DOJO展台"><div class="cap"><strong>DOJO BLAST X 展台</strong>：10ml补油+空烟弹方案，灰色渠道主力</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/YF2ebucq9oinUHx3fMQc3kgln6g" alt="ELFX系列"><div class="cap"><strong>ELFBAR ELFX 系列</strong>：INTRADE展台，预注油市场垄断者</div></div>
 </div>
 <div class="pn"><a href="market.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">市场分析</div></a><a href="product.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">产品路标</div></a></div>
 </div></section>

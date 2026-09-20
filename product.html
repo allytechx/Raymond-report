@@ -95,16 +95,21 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-label{font-size:13px;color:var(--dim2);margin-bottom:4px}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
+
+.nav-search{margin-left:8px}
+.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
+.nav-search input:focus{width:170px;border-color:#2997ff}
+.nav-search input::placeholder{color:#6e6e73}
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
-.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr}
-.tl-c.left{text-align:left;margin-right:0}.tl-c.right{margin-left:0}
+.tl::before{left:20px}.tl-i{grid-template-columns:48px 1fr;grid-template-areas:"dot content"}
+.tl-c.left{text-align:left;margin-right:0;grid-area:content}.tl-c.right{margin-left:0;grid-area:content}.tl-dot{grid-area:dot}.tl-i > div:empty{display:none}
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html" class="active">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></div></nav>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html" class="active">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 04</div><h1>产品定义<br><span>主攻12ml开放式，助攻0+10ml</span></h1><p class="hero-sub">一线客户反馈证实 LVL PWR 长机身问题被多家经销商提出。下一代产品需锁定三大差异化能力。</p></div></section>
 <section><div class="wrap">
 <div class="cards c3">
@@ -138,7 +143,11 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 </div>
 <div class="ig ig2" style="margin-top:32px">
 <div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/TKoCbRhsYoAijUx4Kdtcft72ned" alt="LVL PWR"><div class="cap"><strong>LVL PWR GO</strong>：2ml+10ml补油系统，三档功率/三档气流/双阻值，15种口味</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FphAbCsFuoA1AFxwnbQcPQMmnh3" alt="BULLET门店"><div class="cap"><strong>BULLET 多特蒙德门店</strong>：大口数产品整柜陈列，25K puffs为主力，证明大口数有真实市场</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/XEXTbkGMqoao8Axo5GIclpK3nqh" alt="OXVA多色"><div class="cap"><strong>OXVA XLIM 配色阵容</strong>：黑/灰/棕/绿等沉稳商务色，拒绝缤纷多彩——德国市场偏好验证</div></div>
+</div>
+<div class="ig ig2" style="margin-top:16px">
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/EYCMblmvnoOpaKxrlZQcBFLJnkg" alt="OXVA黑碳纤维"><div class="cap"><strong>OXVA XLIM Pro 碳纤维黑</strong>：开放式市场标杆产品，商务沉稳风格</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FphAbCsFuoA1AFxwnbQcPQMmnh3" alt="BULLET门店"><div class="cap"><strong>BULLET 多特蒙德门店</strong>：大口数产品整柜陈列，25K puffs为主力</div></div>
 </div>
 <div class="pn"><a href="competition.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">竞品分析</div></a><a href="channel.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">渠道拓展</div></a></div>
 </div></section>
