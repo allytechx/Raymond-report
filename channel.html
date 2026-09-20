@@ -96,10 +96,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
 
-.nav-search{margin-left:8px}
-.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
-.nav-search input:focus{width:170px;border-color:#2997ff}
-.nav-search input::placeholder{color:#6e6e73}
+
+
+
+
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
@@ -108,9 +108,20 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
+
+.hero-search{position:relative;max-width:720px;margin:24px auto 0;}
+.hero-search input{width:100%;padding:16px 52px 16px 52px;font-size:17px;border-radius:14px;border:1px solid #2c2c2e;background:rgba(255,255,255,.08);color:#f5f5f7;outline:none;transition:border .2s,background .2s;font-family:inherit;backdrop-filter:blur(10px);}
+.hero-search input:focus{border-color:#2997ff;background:rgba(255,255,255,.12);}
+.hero-search input::placeholder{color:#6e6e73;}
+.hero-search .hs-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#86868b;font-size:20px;pointer-events:none;}
+.hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#111113;border:1px solid #2c2c2e;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html" class="active">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
-<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 05</div><h1>渠道拓展<br><span>左手 EXTRADE，右手 SALT</span></h1><p class="hero-sub">德国 TPD 采用进口商注册制，换经销商成本极高。产品力是唯一武器。本次已与德国、意大利、罗马尼亚客户深入讨论。</p></div></section>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html" class="active">渠道拓展</a><a href="action.html">行动计划</a></div></nav>
+<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 05</div><h1>渠道拓展<br><span>左手 EXTRADE，右手 SALT</span></h1><p class="hero-sub">德国 TPD 采用进口商注册制，换经销商成本极高。产品力是唯一武器。本次已与德国、意大利、罗马尼亚客户深入讨论。</p><div class="hero-search">
+<span class="hs-icon">&#128269;</span>
+<input type="text" id="heroSearchInput" placeholder="搜索产品型号、品牌、经销商名称..." autocomplete="off">
+<div class="hero-dropdown" id="heroSearchDropdown"></div>
+</div></div></section>
 <section><div class="wrap">
 <div class="tw"><table>
 <thead><tr><th style="width:16%">客户</th><th style="width:18%">角色</th><th style="width:32%">关键人/联系</th><th style="width:34%">进展</th></tr></thead><tbody>
@@ -133,4 +144,7 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <div class="pn"><a href="product.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">产品路标</div></a><a href="action.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">行动计划</div></a></div>
 </div></section>
 <footer><div class="wrap"><p>Raymond · InterTabac 2026 Business Trip Report · September 2026</p></div></footer>
+<script src="search-data.js"></script>
+<script src="search-hero.js"></script>
+<script>window.addEventListener("DOMContentLoaded",function(){initHeroSearch("heroSearchInput","heroSearchDropdown");});</script>
 </body></html>

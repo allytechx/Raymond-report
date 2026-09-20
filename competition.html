@@ -96,10 +96,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
 
-.nav-search{margin-left:8px}
-.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
-.nav-search input:focus{width:170px;border-color:#2997ff}
-.nav-search input::placeholder{color:#6e6e73}
+
+
+
+
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
@@ -108,37 +108,75 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
+
+.hero-search{position:relative;max-width:720px;margin:24px auto 0;}
+.hero-search input{width:100%;padding:16px 52px 16px 52px;font-size:17px;border-radius:14px;border:1px solid #2c2c2e;background:rgba(255,255,255,.08);color:#f5f5f7;outline:none;transition:border .2s,background .2s;font-family:inherit;backdrop-filter:blur(10px);}
+.hero-search input:focus{border-color:#2997ff;background:rgba(255,255,255,.12);}
+.hero-search input::placeholder{color:#6e6e73;}
+.hero-search .hs-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#86868b;font-size:20px;pointer-events:none;}
+.hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#111113;border:1px solid #2c2c2e;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
-<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 03</div><h1>竞品分析<br><span>可拆卸电池已成标配</span></h1><p class="hero-sub">展会现场调研 ELUX、VOOPOO、Freemax、Geekvape 等头部品牌。合规开放式产品统一趋势：可拆卸电池 + 多功率/多阻值调节 + 商务简约外观。</p></div></section>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></nav>
+<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 03</div><h1>竞品分析<br><span>可拆卸电池已成标配</span></h1><p class="hero-sub">展会现场调研 ELUX、VOOPOO、Freemax、Geekvape 等头部品牌。合规开放式产品统一趋势：可拆卸电池 + 多功率/多阻值调节 + 商务简约外观。</p><div class="hero-search">
+<span class="hs-icon">&#128269;</span>
+<input type="text" id="heroSearchInput" placeholder="搜索产品型号、品牌、经销商名称..." autocomplete="off">
+<div class="hero-dropdown" id="heroSearchDropdown"></div>
+</div></div></section>
 <section><div class="wrap">
+
+<!-- Section A: 可拆卸电池产品 -->
+<div class="stag">Part A</div>
+<h2 class="stitle">可拆卸电池产品</h2>
+<p class="sdesc">TPD 合规开放式设备，电池可拆卸更换。2027年2月后不可拆卸电池设备不得在欧盟销售。</p>
 <div class="tw"><table>
-<thead><tr><th style="width:13%">品牌</th><th style="width:15%">型号</th><th style="width:15%">电池</th><th style="width:11%">功率</th><th style="width:24%">阻值方案</th><th style="width:22%">关键特点</th></tr></thead><tbody>
-<tr><td><strong>SMOK</strong></td><td>S2 / Nord</td><td>1300mAh 可拆卸</td><td>20W max</td><td>0.6Ω / 0.8Ω 标准pod</td><td><span class="tag tag-b">早期布局</span> 可拆卸电池先行者</td></tr>
-<tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>MAGIC Pod 三档：0.4/0.7/1.0Ω</td><td><span class="tag tag-r">直接对手</span> 三档阻值切换 + 双功率区间</td></tr>
-<tr><td><strong>INNOKIN</strong></td><td>Coolfire Z Air / Foretex Pro</td><td>2000mAh 可拆卸</td><td>40W max</td><td>0.3Ω / 0.8Ω 可调</td><td><span class="tag tag-b">全线可拆卸</span> 2000mAh大容量电池</td></tr>
-<tr><td><strong>UWELL</strong></td><td>Caliburn G3 / G3R</td><td>1800mAh 可拆卸</td><td>25W max</td><td>0.8Ω / 1.0Ω / 1.2Ω</td><td>2.79" 触摸屏，用户体验标杆</td></tr>
-<tr><td><strong>UWELL</strong></td><td>Typhos 2</td><td>1500mAh 内置</td><td>45W</td><td>0.3Ω / 0.4Ω</td><td>六色，All-day MTL定位</td></tr>
-<tr><td><strong>SALT</strong></td><td>Biggie</td><td>900mAh 可拆卸</td><td>15W max</td><td>0.8Ω MTL</td><td>入门级可拆卸，价格敏感市场</td></tr>
-<tr><td><strong>GEEKVAPE</strong></td><td>KLOUD (35K)</td><td>1000mAh</td><td>18W max</td><td>0.6Ω / 10ml Side-Filling</td><td><span class="tag tag-g">短机身验证</span> InnoCigs经销，机身&lt;110mm</td></tr>
-<tr><td><strong>DOJO</strong></td><td>BLAST X (Vaporesso)</td><td>1000mAh 内置</td><td>20W max</td><td>10ml补油瓶 + 空烟弹 0.6Ω</td><td>S-MANN仓库大量备货，灰色渠道主力</td></tr>
+<thead><tr><th style="width:11%">品牌</th><th style="width:16%">型号</th><th style="width:14%">电池</th><th style="width:9%">功率</th><th style="width:20%">阻值方案</th><th style="width:10%">烟油量(ml)</th><th style="width:20%">关键特点</th></tr></thead><tbody>
+<tr><td><strong>SMOK</strong></td><td>S2 / Nord</td><td>1300mAh 可拆卸</td><td>20W max</td><td>0.6Ω / 0.8Ω 标准pod</td><td>2ml</td><td><span class="tag tag-b">早期布局</span> 可拆卸电池先行者</td></tr>
+<tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>MAGIC Pod 三档：0.4/0.7/1.0Ω</td><td>2ml</td><td><span class="tag tag-r">直接对手</span> 三档阻值+双功率区间</td></tr>
+<tr><td><strong>INNOKIN</strong></td><td>Coolfire Z Air</td><td>2000mAh 可拆卸</td><td>40W max</td><td>0.3Ω / 0.8Ω 可调</td><td>2ml</td><td><span class="tag tag-b">全线可拆卸</span> 2000mAh大容量</td></tr>
+<tr><td><strong>UWELL</strong></td><td>Caliburn G3 / G3R</td><td>1800mAh 可拆卸</td><td>25W max</td><td>0.8Ω / 1.0Ω / 1.2Ω</td><td>2ml</td><td>触摸屏，用户体验标杆</td></tr>
+<tr><td><strong>SALT</strong></td><td>Biggie</td><td>900mAh 可拆卸</td><td>15W max</td><td>0.8Ω MTL</td><td>2ml</td><td>入门级可拆卸，价格敏感市场</td></tr>
 </tbody></table></div>
-<h3 style="margin:48px 0 20px;font-size:22px">重点对标分析</h3>
+
+<!-- Section B: 大口数对标产品 -->
+<div class="stag" style="margin-top:64px">Part B</div>
+<h2 class="stitle">大口数对标产品（8ml+）</h2>
+<p class="sdesc">与 LVL PWR 直接对标的大口数/大容量产品，以及跨类直接对手 ARGUS G4。</p>
+<div class="tw"><table>
+<thead><tr><th style="width:11%">品牌</th><th style="width:16%">型号</th><th style="width:14%">电池</th><th style="width:9%">功率</th><th style="width:20%">阻值方案</th><th style="width:10%">烟油量(ml)</th><th style="width:20%">关键特点</th></tr></thead><tbody>
+<tr><td><strong>GEEKVAPE</strong></td><td>KLOUD</td><td>1000mAh</td><td>18W max</td><td>0.6Ω Side-Filling</td><td>10ml</td><td><span class="tag tag-g">短机身验证</span> InnoCigs经销，机身&lt;110mm</td></tr>
+<tr><td><strong>DOJO</strong></td><td>BLAST X</td><td>1000mAh 内置</td><td>20W max</td><td>0.6Ω + 补油瓶</td><td>10ml</td><td>S-MANN仓库大量备货，灰色渠道主力</td></tr>
+<tr><td><strong>Mevol</strong></td><td>S7000</td><td>850mAh</td><td>20W</td><td>0.8Ω 可换pod</td><td>~14ml等效</td><td>可换pod大口数，BLUE BERRY POM</td></tr>
+<tr><td><strong>PIXL</strong></td><td>Max 20K</td><td>850mAh</td><td>20W</td><td>0.8Ω 可换pod</td><td>~18ml等效</td><td>可换pod超大口数，四色商务风</td></tr>
+<tr><td><strong style="color:var(--acc)">LVL（自家）</strong></td><td>PWR GO</td><td>1000mAh</td><td>10–24W</td><td>0.6Ω / 1.0Ω 双阻值</td><td>2+10=12ml</td><td><span class="tag tag-b">自有产品</span> 三档功率，待改可拆卸+短机身</td></tr>
+<tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>0.4/0.7/1.0Ω 三档</td><td>2ml</td><td><span class="tag tag-r">跨类直接对手</span> 虽仅2ml但功能全面对标</td></tr>
+</tbody></table></div>
+
+<!-- 重点对标分析 -->
+<h3 style="margin:48px 0 20px;font-size:22px;text-align:center">重点对标结论</h3>
 <div class="cards c2">
-<div class="card"><h3 style="color:var(--acc)">VOOPOO ARGUS G4 · 直接对手</h3><p>核心卖点：单烟弹三档阻值切换（0.4Ω DTL / 0.7Ω RDTL / 1.0Ω MTL），一个烟弹覆盖三种抽吸体验。1650mAh可拆卸电池，5–35W可调。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：PWR GO 已有三档功率（10/14/24W）和双阻值（0.6/1.0Ω），需强化为"三档阻值+三档功率"完整可调方案，直接对标。</p></div>
-<div class="card"><h3 style="color:var(--acc)">GEEKVAPE KLOUD · 短身验证</h3><p>35K puffs 大口数，10ml Side-Filling补油系统，1000mAh，18W max，0.6Ω。由 InnoCigs 经销，6色可选。机身明显短于 LVL PWR（132.25mm）。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：下一代产品必须缩短机身。KLOUD 证明同10ml容量下短机身方案可行，多家经销商反馈 PWR 过长。</p></div>
+<div class="card"><h3 style="color:var(--acc)">VOOPOO ARGUS G4 · 功能对标</h3><p>核心卖点：单烟弹三档阻值（0.4Ω DTL / 0.7Ω RDTL / 1.0Ω MTL），一个烟弹覆盖三种抽吸体验。1650mAh可拆卸，5–35W可调。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：PWR GO 已有三档功率（10/14/24W）和双阻值（0.6/1.0Ω），下一代需强化为"三档阻值+三档功率"完整可调方案。</p></div>
+<div class="card"><h3 style="color:var(--acc)">GEEKVAPE KLOUD · 短身验证</h3><p>10ml Side-Filling补油，1000mAh，18W，0.6Ω。InnoCigs经销，机身明显短于 LVL PWR（132.25mm）。</p><p style="margin-top:12px"><strong>对 LVL 的启示</strong>：下一代必须缩短机身至~110mm。KLOUD 证明同10ml容量下短机身可行，多家经销商反馈 PWR 过长。</p></div>
 </div>
-<div class="ig ig3" style="margin-top:32px">
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/A0zbb2ao5oW9Tjx0cCwcPZ3Qnce" alt="ARGUS G4"><div class="cap"><strong>VOOPOO ARGUS G4</strong>：五色阵容，1650mAh可拆卸，5–35W，三档阻值切换</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FCSGbvoVrolyfdxTLQ2chWIgnTh" alt="KLOUD"><div class="cap"><strong>GEEKVAPE KLOUD</strong>：10ml Side-Filling，1000mAh，短机身方案验证</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/EYCMblmvnoOpaKxrlZQcBFLJnkg" alt="OXVA XLIM"><div class="cap"><strong>OXVA XLIM Pro</strong>：碳纤维黑，开放式市场领跑者，商务风格标杆</div></div>
+
+<!-- 产品图库 -->
+<h3 style="margin:56px 0 20px;font-size:22px;text-align:center">竞品产品图</h3>
+<div class="ig ig3">
+<div class="ic"><img src="https://aka.doubaocdn.com/s/r3UIqknwzZ" alt="SMOK Nord"><div class="cap"><strong>SMOK S2 / Nord</strong>：1300mAh可拆卸，20W，0.6/0.8Ω</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/A0zbb2ao5oW9Tjx0cCwcPZ3Qnce" alt="ARGUS G4"><div class="cap"><strong>VOOPOO ARGUS G4</strong>：五色，1650mAh可拆卸，三档阻值切换</div></div>
+<div class="ic"><img src="https://aka.doubaocdn.com/s/XKQVRkVuhV" alt="INNOKIN Coolfire Z Air"><div class="cap"><strong>INNOKIN Coolfire Z Air</strong>：2000mAh可拆卸，40W，0.3/0.8Ω</div></div>
+<div class="ic"><img src="https://aka.doubaocdn.com/s/TnTvMZDVLp" alt="UWELL Caliburn G3"><div class="cap"><strong>UWELL Caliburn G3</strong>：六色，1800mAh可拆卸，25W，触摸屏</div></div>
+<div class="ic"><img src="https://aka.doubaocdn.com/s/EdY49FKIhc" alt="SALT Biggie"><div class="cap"><strong>SALT Biggie</strong>：900mAh可拆卸，15W，入门级</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/FCSGbvoVrolyfdxTLQ2chWIgnTh" alt="GEEKVAPE KLOUD"><div class="cap"><strong>GEEKVAPE KLOUD</strong>：10ml Side-Filling，18W，短机身</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JRVubWoibo3GN4xdPHZc91gdnFb" alt="DOJO BLAST X"><div class="cap"><strong>DOJO BLAST X</strong>：10ml补油，20W，灰色渠道主力</div></div>
+<div class="ic"><img src="https://aka.doubaocdn.com/s/YpY0cX8i97" alt="Mevol S7000"><div class="cap"><strong>Mevol S7000</strong>：可换pod，~14ml等效大口数</div></div>
+<div class="ic"><img src="https://aka.doubaocdn.com/s/qhRC4DWMox" alt="PIXL Max 20K"><div class="cap"><strong>PIXL Max 20K</strong>：可换pod，~18ml等效，四色商务风</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/TKoCbRhsYoAijUx4Kdtcft72ned" alt="LVL PWR GO"><div class="cap"><strong>LVL PWR GO（自家）</strong>：2+10ml=12ml系统，三档功率，待改可拆卸+短机身</div></div>
 </div>
-<div class="ig ig3" style="margin-top:16px">
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KImCb75hkokAWNxezGAcF3ZBn5f" alt="Uwell Typhos 2"><div class="cap"><strong>UWELL Typhos 2</strong>：六色，45W，"Built for All-Day MTL"</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JRVubWoibo3GN4xdPHZc91gdnFb" alt="DOJO展台"><div class="cap"><strong>DOJO BLAST X 展台</strong>：10ml补油+空烟弹方案，灰色渠道主力</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/YF2ebucq9oinUHx3fMQc3kgln6g" alt="ELFX系列"><div class="cap"><strong>ELFBAR ELFX 系列</strong>：INTRADE展台，预注油市场垄断者</div></div>
-</div>
+
 <div class="pn"><a href="market.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">市场分析</div></a><a href="product.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">产品路标</div></a></div>
 </div></section>
 <footer><div class="wrap"><p>Raymond · InterTabac 2026 Business Trip Report · September 2026</p></div></footer>
+<script src="search-data.js"></script>
+<script src="search-hero.js"></script>
+<script>window.addEventListener("DOMContentLoaded",function(){initHeroSearch("heroSearchInput","heroSearchDropdown");});</script>
 </body></html>

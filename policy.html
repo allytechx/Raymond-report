@@ -96,10 +96,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
 
-.nav-search{margin-left:8px}
-.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
-.nav-search input:focus{width:170px;border-color:#2997ff}
-.nav-search input::placeholder{color:#6e6e73}
+
+
+
+
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
@@ -110,16 +110,28 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
+
+.hero-search{position:relative;max-width:720px;margin:24px auto 0;}
+.hero-search input{width:100%;padding:16px 52px 16px 52px;font-size:17px;border-radius:14px;border:1px solid #2c2c2e;background:rgba(255,255,255,.08);color:#f5f5f7;outline:none;transition:border .2s,background .2s;font-family:inherit;backdrop-filter:blur(10px);}
+.hero-search input:focus{border-color:#2997ff;background:rgba(255,255,255,.12);}
+.hero-search input::placeholder{color:#6e6e73;}
+.hero-search .hs-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#86868b;font-size:20px;pointer-events:none;}
+.hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#111113;border:1px solid #2c2c2e;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html" class="active">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
-<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 01</div><h1>政策走势<br><span>可拆卸电池法规倒计时</span></h1><p class="hero-sub">德国严格落地欧盟 TPD 法规，叠加电池法规，市场已形成"正规合规渠道 + 便利店灰色渠道"二元业态。</p></div></section>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html" class="active">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></nav>
+<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 01</div><h1>政策走势<br><span>可拆卸电池法规倒计时</span></h1><p class="hero-sub">德国严格落地欧盟 TPD 法规，叠加电池法规，市场已形成"正规合规渠道 + 便利店灰色渠道"二元业态。</p><div class="hero-search">
+<span class="hs-icon">&#128269;</span>
+<input type="text" id="heroSearchInput" placeholder="搜索产品型号、品牌、经销商名称..." autocomplete="off">
+<div class="hero-dropdown" id="heroSearchDropdown"></div>
+</div></div></section>
 <section><div class="wrap">
 <div class="tl">
-<div class="tl-i"><div class="tl-c left"><div class="tl-date">2026年9月 · 当前</div><h4>展会现场趋势已确立</h4><p>InterTabac 2026 现场，可拆卸电池已成头部品牌标配：SMOK S2、VOOPOO ARGUS G4、INNOKIN 全线、UWELL Caliburn G3、SALT Biggie 均采用可拆卸结构。</p></div><div class="tl-dot"></div><div></div></div>
-<div class="tl-i"><div></div><div class="tl-dot"></div><div class="tl-c right"><div class="tl-date">2027年2月18日 · 强制执行</div><h4>EU 2023/1542 Article 11</h4><p>嵌入产品的便携式电池必须可由终端用户随时拆卸和更换。电子烟设备涵盖在内。此后不可拆卸电池设备不得在欧盟市场销售。</p></div></div>
-<div class="tl-i"><div class="tl-c left"><div class="tl-date">TPD 现行规则</div><h4>2ml 上限 + 灰色变体</h4><p>预填充烟弹 ≤ 2ml，尼古丁 ≤ 20mg/ml。0+10ml 变体（空仓+补油瓶）目前合法但正被各国立法限制。>10ml 大容量仅在灰色渠道流通。</p></div><div class="tl-dot"></div><div></div></div>
-<div class="tl-i"><div></div><div class="tl-dot"></div><div class="tl-c right"><div class="tl-date">德国电子烟税</div><h4>€0.32/ml + 19% VAT</h4><p>2026年起按实际烟油体积线性征收，无最低起征点。12ml 系统税约 €3.84 + VAT，直接影响终端定价模型。</p></div></div>
+<div class="tl-i"><div class="tl-c left"><div class="tl-date">2016年起 · TPD 2 baseline</div><h4>2ml 预注上限 + 尼古丁≤20mg/ml</h4><p>欧盟 TPD 2 法规：预填充烟弹 ≤ 2ml，补充油瓶 ≤ 10ml，尼古丁 ≤ 20mg/ml。0+10ml 变体（空仓+补油瓶）目前合法但正被各国立法限制。</p></div><div class="tl-dot"></div><div></div></div>
+<div class="tl-i"><div></div><div class="tl-dot"></div><div class="tl-c right"><div class="tl-date">2026年1月 · 德国电子烟税生效</div><h4>€0.32/ml + 19% VAT</h4><p>按实际烟油体积线性征收，无最低起征点。12ml 系统税约 €3.84 + VAT，直接影响终端定价模型。大容量产品税负更重，进一步压缩灰色渠道利润。</p></div></div>
+<div class="tl-i"><div class="tl-c left"><div class="tl-date">2026年9月 · 当前（展会现场）</div><h4>可拆卸电池已成头部品牌标配</h4><p>InterTabac 2026 现场：SMOK S2、VOOPOO ARGUS G4、INNOKIN 全线、UWELL Caliburn G3、SALT Biggie 均采用可拆卸结构。展会拆机样机为 1800mAh 抽拉式电池包。</p></div><div class="tl-dot"></div><div></div></div>
+<div class="tl-i"><div></div><div class="tl-dot"></div><div class="tl-c right" style="border-color:rgba(41,151,255,.3)"><div class="tl-date">2027年2月18日 · 强制执行</div><h4>EU 2023/1542 Article 11 可拆卸电池</h4><p>嵌入产品的便携式电池必须可由终端用户随时拆卸和更换。电子烟设备涵盖在内。此后不可拆卸电池设备不得在欧盟市场销售。</p></div></div>
 </div>
+<div class="hl" style="margin-top:32px;border-color:rgba(41,151,255,.3)"><h4 style="color:var(--acc)">趋势预判</h4><p>随着政策趋严，预计开放式 + 可拆卸电池将成为正规市场的重点。>10ml 灰色产品受税收与执法双重挤压，正规渠道将向"开放式可注油 + 可拆卸电池 + 商务外观"集中，这也是我们产品定义的核心方向。</p></div>
 <div class="cards c2" style="margin-top:40px">
 <div class="card" style="border-color:rgba(34,197,94,.3)"><h3 style="color:var(--green)">正规合规渠道</h3><p>Vape专营店 + 正规批发商。销售 TPD 合规产品（≤2ml预注 / 开放式可注油 / 2ml+10ml补油系统）。渠道稳定，可规模化分销，是长线业务唯一选择。</p></div>
 <div class="card" style="border-color:rgba(239,68,68,.3)"><h3 style="color:var(--red)">便利店灰色渠道</h3><p>销售 >10ml 大容量产品（FUMOT/RandM 为德国黑市最畅销品牌）。不公开陈列，店主只卖给熟客或有人问起才从柜子拿出。市场存在但不可规模化、不可控。</p></div>
@@ -133,4 +145,7 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <div class="pn"><a href="index.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">首页</div></a><a href="market.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">市场分析</div></a></div>
 </div></section>
 <footer><div class="wrap"><p>Raymond · InterTabac 2026 Business Trip Report · September 2026</p></div></footer>
+<script src="search-data.js"></script>
+<script src="search-hero.js"></script>
+<script>window.addEventListener("DOMContentLoaded",function(){initHeroSearch("heroSearchInput","heroSearchDropdown");});</script>
 </body></html>

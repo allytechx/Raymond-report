@@ -97,10 +97,10 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .pn .pn-title{font-size:18px;font-weight:600;color:var(--acc)}
 footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--dim2);font-size:14px;margin-top:60px}
 
-.nav-search{margin-left:8px}
-.nav-search input{background:#111113;border:1px solid #2c2c2e;border-radius:8px;padding:6px 12px;font-size:13px;color:#f5f5f7;outline:none;width:120px;transition:width .2s;font-family:inherit}
-.nav-search input:focus{width:170px;border-color:#2997ff}
-.nav-search input::placeholder{color:#6e6e73}
+
+
+
+
 @media(max-width:900px){
 .c3,.c4{grid-template-columns:repeat(2,1fr)}.vs{grid-template-columns:1fr}
 .ig3{grid-template-columns:repeat(2,1fr)}.pnav{grid-template-columns:repeat(2,1fr)}
@@ -109,9 +109,20 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .nav-links{overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
 }
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
+
+.hero-search{position:relative;max-width:720px;margin:24px auto 0;}
+.hero-search input{width:100%;padding:16px 52px 16px 52px;font-size:17px;border-radius:14px;border:1px solid #2c2c2e;background:rgba(255,255,255,.08);color:#f5f5f7;outline:none;transition:border .2s,background .2s;font-family:inherit;backdrop-filter:blur(10px);}
+.hero-search input:focus{border-color:#2997ff;background:rgba(255,255,255,.12);}
+.hero-search input::placeholder{color:#6e6e73;}
+.hero-search .hs-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#86868b;font-size:20px;pointer-events:none;}
+.hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#111113;border:1px solid #2c2c2e;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
 </style></head><body>
-<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html" class="active">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a><div class="nav-search"><form action="search.html" method="get"><input type="text" name="q" placeholder="搜索产品/经销商..."></form></div></div></nav>
-<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 02</div><h1>市场格局<br><span>ELFBAR 垄断预注油，OXVA 领跑开放式</span></h1><p class="hero-sub">法规分化造就德国市场二元格局。预注油赛道已被 ELFBAR 锁死，开放式赛道 OXVA 领先但有短板可打。</p></div></section>
+<nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html" class="active">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></nav>
+<section class="hero"><div class="wrap"><div class="hero-tag">Chapter 02</div><h1>市场格局<br><span>ELFBAR 垄断预注油，OXVA 领跑开放式</span></h1><p class="hero-sub">法规分化造就德国市场二元格局。预注油赛道已被 ELFBAR 锁死，开放式赛道 OXVA 领先但有短板可打。</p><div class="hero-search">
+<span class="hs-icon">&#128269;</span>
+<input type="text" id="heroSearchInput" placeholder="搜索产品型号、品牌、经销商名称..." autocomplete="off">
+<div class="hero-dropdown" id="heroSearchDropdown"></div>
+</div></div></section>
 <section><div class="wrap">
 <div class="vs">
 <div class="vs-c" style="border-color:rgba(239,68,68,.3)"><h3 style="color:var(--red)">预注油市场 · 不可切入</h3><div class="cards" style="gap:10px"><div class="card" style="background:transparent;border-color:var(--border)"><strong>主导品牌</strong>：ELFBAR 高度垄断</div><div class="card" style="background:transparent;border-color:var(--border)"><strong>渠道</strong>：便利店 + 加油站 + 灰色渠道</div><div class="card" style="background:transparent;border-color:var(--border)"><strong>护城河</strong>：渠道网络、价格体系、用户心智已固化</div><div class="card" style="background:transparent;border-color:var(--border)"><strong>新品牌机会</strong>：<span class="tag tag-r">几乎为零</span></div></div></div>
@@ -134,4 +145,7 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 </div></section>
 <script>var mc=echarts.init(document.getElementById("mktChart"));mc.setOption({tooltip:{trigger:"item",backgroundColor:"#1c1c1e",borderColor:"#2c2c2e",textStyle:{color:"#f5f5f7"}},legend:{bottom:0,textStyle:{color:"#86868b",fontSize:13}},series:[{type:"pie",radius:["40%","70%"],center:["50%","45%"],label:{color:"#f5f5f7",fontSize:13},data:[{value:45,name:"预注油/一次性（ELFBAR垄断）",itemStyle:{color:"#ff453a"}},{value:30,name:"开放式换弹（OXVA领跑）",itemStyle:{color:"#30d158"}},{value:15,name:"灰色渠道/>10ml",itemStyle:{color:"#ffd60a"}},{value:10,name:"其他",itemStyle:{color:"#2997ff"}}]}]});window.addEventListener("resize",function(){mc.resize()});</script>
 <footer><div class="wrap"><p>Raymond · InterTabac 2026 Business Trip Report · September 2026</p></div></footer>
+<script src="search-data.js"></script>
+<script src="search-hero.js"></script>
+<script>window.addEventListener("DOMContentLoaded",function(){initHeroSearch("heroSearchInput","heroSearchDropdown");});</script>
 </body></html>
