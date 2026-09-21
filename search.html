@@ -930,6 +930,21 @@ const INDEX=[
 const input=document.getElementById('searchInput');
 const area=document.getElementById('resultsArea');
 
+var PRODUCT_IMGS = {
+  "VOOPOO ARGUS G4": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LLGBbSPTTo38x8xbi2gcqFwVnjP",
+  "GEEKVAPE KLOUD": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Q2z2bra7xoG2N2xfZIZcyBksnDg",
+  "SMOK S2 Nord": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/PgyObtoPXodr1fx5i6Rc0Fetncn",
+  "UWELL Caliburn G3": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/KImCb75hkokAWNxezGAcF3ZBn5f",
+  "DOJO BLAST X": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/JRVubWoibo3GN4xdPHZc91gdnFb",
+  "Mevol S7000": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/AwGmbav1HoPo2LxRxSQcS7iSnVd",
+  "PIXL Max 20K": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/LkWlb21rSoQ8mcxpbcAc9nMTnUc",
+  "OXVA XLIM Pro": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/EYCMblmvnoOpaKxrlZQcBFLJnkg",
+  "LVL PWR GO": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/TKoCbRhsYoAijUx4Kdtcft72ned",
+  "ELFBAR ELFA": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/BMddb4HO3o7owVx7kNQcSQ07nne",
+  "ELFBAR ELFX PRO": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Pymqb49XnoI1dhxp1XTc0zfRnJh",
+  "FUMOT Royal 15000": "https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Z9TSbiSuzo0RDIxXFyTcjTFqnvc"
+};
+
 function search(q){
   q=q.trim().toLowerCase();
   if(!q){area.innerHTML='<p class="no-result">输入关键词开始搜索...</p>';return}
@@ -944,7 +959,9 @@ function search(q){
     return{item,score};
   }).filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,60);
 
-  if(!scored.length){area.innerHTML='<p class="no-result">未找到相关结果</p>';return}
+  let googleLink=`<a href="https://www.google.com/search?q=${encodeURIComponent(q)}" target="_blank" style="display:block;text-align:center;padding:16px;margin-top:24px;background:var(--card);border:1px solid var(--border);border-radius:14px;color:var(--acc);text-decoration:none;font-size:15px;">&#128269; 在 Google 搜索 "${q}"</a>`;
+
+  if(!scored.length){area.innerHTML='<p class="no-result">未找到相关结果</p>'+googleLink;return}
 
   const groups={};
   scored.forEach(x=>{
@@ -956,11 +973,16 @@ function search(q){
   for(const[type,items] of Object.entries(groups)){
     html+=`<div class="result-group"><h3>${type} · ${items.length}条</h3>`;
     items.forEach(it=>{
-      html+=`<a class="result-item" href="${it.page}"><div class="r-title">${it.title}</div><div class="r-meta">${it.meta} · <span>${it.page.replace('.html','')}</span></div></a>`;
+      var img=PRODUCT_IMGS[it.title];
+      var imgHtml='';
+      if(img){
+        imgHtml=`<img src="${img}" style="width:64px;height:64px;object-fit:cover;border-radius:10px;flex-shrink:0;margin-right:16px;background:#1c1c1e" loading="lazy">`;
+      }
+      html+=`<a class="result-item" href="${it.page}" style="display:flex;align-items:center;">${imgHtml}<div style="flex:1"><div class="r-title">${it.title}</div><div class="r-meta">${it.meta} · <span>${it.page.replace('.html','')}</span></div></div></a>`;
     });
     html+='</div>';
   }
-  area.innerHTML=html;
+  area.innerHTML=html+googleLink;
 }
 
 input.addEventListener('input',e=>search(e.target.value));
