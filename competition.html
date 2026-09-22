@@ -115,6 +115,14 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 .hero-search input::placeholder{color:#8e8e93;}
 .hero-search .hs-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#86868b;font-size:20px;pointer-events:none;}
 .hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#ffffff;border:1px solid #d2d2d7;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+
+/* Mobile table scroll */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px}
+.table-wrap table{min-width:600px;width:100%}
+@media(max-width:768px){
+.table-wrap{margin:0 -16px;padding:0 16px}
+table{min-width:560px}
+}
 </style></head><body>
 <nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html" class="active">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html">渠道拓展</a><a href="action.html">行动计划</a></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 03</div><h1>竞品分析<br><span>可拆卸电池已成标配</span></h1><p class="hero-sub">展会现场调研 ELUX、VOOPOO、Freemax、Geekvape 等头部品牌。合规开放式产品统一趋势：可拆卸电池 + 多功率/多阻值调节 + 商务简约外观。</p><div class="hero-search">
@@ -128,20 +136,20 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <div class="stag">Part A</div>
 <h2 class="stitle">可拆卸电池产品</h2>
 <p class="sdesc">TPD 合规开放式设备，电池可拆卸更换。2027年2月后不可拆卸电池设备不得在欧盟销售。</p>
-<div class="tw"><table>
+<div class="tw"><div class="table-wrap"><table>
 <thead><tr><th style="width:11%">品牌</th><th style="width:16%">型号</th><th style="width:14%">电池</th><th style="width:9%">功率</th><th style="width:20%">阻值方案</th><th style="width:10%">烟油量(ml)</th><th style="width:20%">关键特点</th></tr></thead><tbody>
 <tr><td><strong>SMOK</strong></td><td>S2 / Nord</td><td>1300mAh 可拆卸</td><td>20W max</td><td>0.6Ω / 0.8Ω 标准pod</td><td>2ml</td><td><span class="tag tag-b">早期布局</span> 可拆卸电池先行者</td></tr>
 <tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>MAGIC Pod 三档：0.4/0.7/1.0Ω</td><td>2ml</td><td><span class="tag tag-r">直接对手</span> 三档阻值+双功率区间</td></tr>
 <tr><td><strong>INNOKIN</strong></td><td>Coolfire Z Air</td><td>2000mAh 可拆卸</td><td>40W max</td><td>0.3Ω / 0.8Ω 可调</td><td>2ml</td><td><span class="tag tag-b">全线可拆卸</span> 2000mAh大容量</td></tr>
 <tr><td><strong>UWELL</strong></td><td>Caliburn G3 / G3R</td><td>1800mAh 可拆卸</td><td>25W max</td><td>0.8Ω / 1.0Ω / 1.2Ω</td><td>2ml</td><td>触摸屏，用户体验标杆</td></tr>
 <tr><td><strong>SALT</strong></td><td>Biggie</td><td>900mAh 可拆卸</td><td>15W max</td><td>0.8Ω MTL</td><td>2ml</td><td>入门级可拆卸，价格敏感市场</td></tr>
-</tbody></table></div>
+</tbody></table></div></div>
 
 <!-- Section B: 大口数对标产品 -->
 <div class="stag" style="margin-top:64px">Part B</div>
 <h2 class="stitle">大口数对标产品（8ml+）</h2>
 <p class="sdesc">与 LVL PWR 直接对标的大口数/大容量产品，以及跨类直接对手 ARGUS G4。</p>
-<div class="tw"><table>
+<div class="tw"><div class="table-wrap"><table>
 <thead><tr><th style="width:11%">品牌</th><th style="width:16%">型号</th><th style="width:14%">电池</th><th style="width:9%">功率</th><th style="width:20%">阻值方案</th><th style="width:10%">烟油量(ml)</th><th style="width:20%">关键特点</th></tr></thead><tbody>
 <tr><td><strong>GEEKVAPE</strong></td><td>KLOUD</td><td>1000mAh</td><td>18W max</td><td>0.6Ω Side-Filling</td><td>10ml</td><td><span class="tag tag-g">短机身验证</span> InnoCigs经销，机身&lt;110mm</td></tr>
 <tr><td><strong>DOJO</strong></td><td>BLAST X</td><td>1000mAh 内置</td><td>20W max</td><td>0.6Ω + 补油瓶</td><td>10ml</td><td>S-MANN仓库大量备货，灰色渠道主力</td></tr>
@@ -149,7 +157,7 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <tr><td><strong>PIXL</strong></td><td>Max 20K</td><td>850mAh</td><td>20W</td><td>0.8Ω 可换pod</td><td>~18ml等效</td><td>可换pod超大口数，四色商务风</td></tr>
 <tr><td><strong style="color:var(--acc)">LVL（自家）</strong></td><td>PWR GO</td><td>1000mAh</td><td>10–24W</td><td>0.6Ω / 1.0Ω 双阻值</td><td>2+10=12ml</td><td><span class="tag tag-b">自有产品</span> 三档功率，待改可拆卸+短机身</td></tr>
 <tr><td><strong>VOOPOO</strong></td><td>ARGUS G4</td><td>1650mAh 可拆卸</td><td>5–35W</td><td>0.4/0.7/1.0Ω 三档</td><td>2ml</td><td><span class="tag tag-r">跨类直接对手</span> 虽仅2ml但功能全面对标</td></tr>
-</tbody></table></div>
+</tbody></table></div></div>
 
 <!-- 重点对标分析 -->
 <h3 style="margin:48px 0 20px;font-size:22px;text-align:center">重点参考型号</h3>
