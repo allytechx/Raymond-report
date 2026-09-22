@@ -8,10 +8,10 @@
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap">
 <style>
 :root{
-  --bg:#000000;--bg2:#0a0a0a;--card:#111113;--card2:#1c1c1e;
-  --border:#1d1d1f;--border2:#2c2c2e;
-  --text:#f5f5f7;--dim:#86868b;--dim2:#6e6e73;
-  --acc:#2997ff;--acc2:#0071e3;
+  --bg:#f5f5f7;--bg2:#ffffff;--card:#ffffff;--card2:#f0f0f4;
+  --border:#d2d2d7;--border2:#c7c7cc;
+  --text:#1d1d1f;--dim:#6e6e73;--dim2:#8e8e93;
+  --acc:#ff6b35;--acc2:#e85a20;
   --green:#30d158;--red:#ff453a;--yellow:#ffd60a;--purple:#bf5af2;--blue:#2997ff;
   --radius:18px;
 }
@@ -19,28 +19,28 @@
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{background:var(--bg);color:var(--text);font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;line-height:1.6;overflow-x:hidden;font-size:17px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(0,0,0,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border)}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border)}
 .nav-in{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 24px}
 .nav-brand{font-weight:700;font-size:17px;color:var(--text);letter-spacing:-.2px;text-decoration:none}
 .nav-links{display:flex;gap:4px;flex-wrap:wrap}
 .nav-links a{color:var(--dim);text-decoration:none;font-size:15px;font-weight:400;padding:8px 14px;border-radius:8px;transition:all .2s;white-space:nowrap}
-.nav-links a:hover{color:var(--text);background:rgba(255,255,255,.06)}
+.nav-links a:hover{color:var(--text);background:rgba(0,0,0,.05)}
 .nav-links a.active{color:var(--acc);font-weight:500}
-.hero{min-height:50vh;text-align:center;display:flex;align-items:center;position:relative;overflow:hidden;padding:140px 0 60px;background:#000}
-.hero::before{content:'';position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(41,151,255,.1) 0%,transparent 65%);border-radius:50%;pointer-events:none}
+.hero{min-height:50vh;text-align:center;display:flex;align-items:center;position:relative;overflow:hidden;padding:100px 0 40px;background:linear-gradient(180deg,#ffffff 0%,#f5f5f7 100%)}
+.hero::before{content:'';position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(255,107,53,.08) 0%,transparent 65%);border-radius:50%;pointer-events:none}
 .hero .wrap{position:relative;z-index:1}
 .hero-tag{display:inline-block;font-size:15px;font-weight:500;color:var(--acc);letter-spacing:.02em;margin-bottom:20px}
 .hero h1{font-size:clamp(26px,4vw,42px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
 .hero h1 span{display:block;font-size:clamp(20px,2.5vw,28px);font-weight:400;color:var(--dim);margin-top:10px}
 .hero-sub{font-size:18px;color:var(--dim);max-width:680px;margin:0 auto;line-height:1.65}
-section{padding:80px 0}
+section{padding:56px 0}
 .stag{display:block;font-size:15px;font-weight:600;color:var(--acc);margin-bottom:14px;text-align:center}
 .stitle{font-size:clamp(26px,3.5vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.02em;margin-bottom:16px;text-align:center}
 .sdesc{font-size:18px;color:var(--dim);max-width:760px;margin:0 auto 40px;line-height:1.6;text-align:center}
 .cards{display:grid;gap:20px}
 .c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;transition:border-color .25s,transform .25s}
-.card:hover{border-color:var(--border2);transform:translateY(-3px)}
+.card:hover{border-color:#ff6b35;transform:translateY(-3px);box-shadow:0 4px 20px rgba(0,0,0,.06)}
 .card h3{font-size:20px;font-weight:600;margin-bottom:10px}
 .card p{font-size:16px;color:var(--dim);line-height:1.65}
 .card .big{font-size:44px;font-weight:700;color:var(--acc);line-height:1;margin-bottom:10px}
@@ -58,7 +58,7 @@ section{padding:80px 0}
 table{width:100%;border-collapse:collapse;background:var(--card);table-layout:fixed}
 th{background:var(--card2);text-align:left;padding:16px 20px;font-size:14px;font-weight:600;color:var(--dim);white-space:nowrap}
 td{padding:14px 20px;font-size:15px;border-top:1px solid var(--border);vertical-align:top}
-tr:hover td{background:rgba(255,255,255,.02)}
+tr:hover td{background:rgba(0,0,0,.02)}
 .tag{display:inline-block;padding:4px 12px;border-radius:9px;font-size:12px;font-weight:500;white-space:nowrap}
 .tag-r{background:rgba(255,69,58,.15);color:var(--red)}.tag-g{background:rgba(48,209,88,.15);color:var(--green)}
 .tag-o{background:rgba(255,214,10,.15);color:var(--yellow)}.tag-b{background:rgba(41,151,255,.15);color:var(--acc)}
@@ -84,7 +84,7 @@ tr:hover td{background:rgba(255,255,255,.02)}
 .hl p{font-size:16px;color:var(--dim)}
 .pnav{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pnav-a{display:block;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:36px 32px;text-decoration:none;color:var(--text);transition:all .3s}
-.pnav-a:hover{border-color:var(--acc);transform:translateY(-4px);box-shadow:0 12px 40px rgba(41,151,255,.08)}
+.pnav-a:hover{border-color:var(--acc);transform:translateY(-4px);box-shadow:0 12px 40px rgba(255,107,53,.12)}
 .pnav-a .num{font-size:14px;font-weight:600;color:var(--acc);margin-bottom:10px}
 .pnav-a h3{font-size:22px;font-weight:600;margin-bottom:8px}
 .pnav-a p{font-size:15px;color:var(--dim);line-height:1.6}
@@ -110,11 +110,11 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 @media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.ig2,.ig3{grid-template-columns:1fr}.pnav{grid-template-columns:1fr}.nav-in{padding:0 12px}.nav-brand{font-size:14px}.nav-links a{font-size:13px;padding:6px 10px}}
 
 .hero-search{position:relative;max-width:720px;margin:24px auto 0;}
-.hero-search input{width:100%;padding:16px 52px 16px 52px;font-size:17px;border-radius:14px;border:1px solid #2c2c2e;background:rgba(255,255,255,.08);color:#f5f5f7;outline:none;transition:border .2s,background .2s;font-family:inherit;backdrop-filter:blur(10px);}
-.hero-search input:focus{border-color:#2997ff;background:rgba(255,255,255,.12);}
-.hero-search input::placeholder{color:#6e6e73;}
+.hero-search input{width:100%;padding:16px 52px 16px 52px;font-size:17px;border-radius:14px;border:1px solid #2c2c2e;background:rgba(0,0,0,.04);color:#1d1d1f;outline:none;transition:border .2s,background .2s;font-family:inherit;backdrop-filter:blur(10px);}
+.hero-search input:focus{border-color:#ff6b35;background:rgba(255,107,53,.06);}
+.hero-search input::placeholder{color:#8e8e93;}
 .hero-search .hs-icon{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:#86868b;font-size:20px;pointer-events:none;}
-.hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#111113;border:1px solid #2c2c2e;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
+.hero-dropdown{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;background:#ffffff;border:1px solid #d2d2d7;border-radius:14px;max-height:420px;overflow-y:auto;z-index:200;box-shadow:0 20px 60px rgba(0,0,0,.5);}
 </style></head><body>
 <nav class="nav"><div class="nav-in"><a href="index.html" class="nav-brand">Raymond 德国出差报告</a><div class="nav-links"><a href="index.html">首页</a><a href="policy.html">政策走势</a><a href="market.html">市场分析</a><a href="competition.html">竞品分析</a><a href="product.html">产品路标</a><a href="channel.html" class="active">渠道拓展</a><a href="action.html">行动计划</a></div></nav>
 <section class="hero"><div class="wrap"><div class="hero-tag">Chapter 05</div><h1>渠道拓展<br><span>左手 EXTRADE，右手 SALT</span></h1><p class="hero-sub">德国 TPD 采用进口商注册制，更换经销商成本极高，故产品力是不二武器，同时辅以一定的营销预算，先在德国市场撕开缺口，然后挺进意大利和罗马尼亚市场。</p><div class="hero-search">
@@ -156,7 +156,7 @@ footer{border-top:1px solid var(--border);padding:48px 0;text-align:center;color
 <div class="ig ig3" style="margin-top:32px">
 <div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/HCF4bKbMxoMASixfNsvchJjtnEb" alt="BULLET门店"><div class="cap"><strong>BULLET 门店实拍</strong>：科隆/多特电子烟连锁，ELFBAR全系陈列，大口数产品零售</div></div>
 <div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/Vhv9bBlDXocUjrxV5nXc9fQRnTc" alt="S-MANN仓库货架"><div class="cap"><strong>S-MANN 仓库货架</strong>：DOJO BLAST X 套装、Arcbear PRO 15000、ELFBAR全系备货</div></div>
-<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/S5pFbSgBaoTlIsxUEHqczTnInRf" alt="欧洲拓展路线图"><div class="cap"><strong>欧洲拓展路线</strong>：在德国撕开市场，选择合适合作伙伴，挺进法国、意大利、西班牙、罗马尼亚等国家</div></div>
+<div class="ic"><img src="https://media.doubao.com/space/api/box/stream/download/all_by_mount_point/AoYtb9h8Uo5JO7xEFgicdqBPnib" alt="欧洲拓展路线图"><div class="cap"><strong>欧洲拓展路线</strong>：在德国撕开市场，选择合适合作伙伴，挺进法国、意大利、西班牙、罗马尼亚等国家</div></div>
 </div>
 <div class="pn"><a href="product.html" class="prev"><div class="pn-label">← 上一页</div><div class="pn-title">产品路标</div></a><a href="action.html" class="next"><div class="pn-label">下一页 →</div><div class="pn-title">行动计划</div></a></div>
 </div></section>
